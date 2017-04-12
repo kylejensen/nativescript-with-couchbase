@@ -1,0 +1,13 @@
+@import 'nativescript-theme-core/css/core.light.css';
+
+@keyframes pulse {
+    0% {}
+    50% { transform: scale(1.5, 1.5) }
+    100% { transform: scale(1, 1) }
+}
+
+.pulse {
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-delay: 1s
+}
