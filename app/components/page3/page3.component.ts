@@ -1,5 +1,4 @@
 import { Component, OnInit } from "@angular/core";
-import * as ApplicationSettings from "application-settings";
 import { Location } from "@angular/common";
 import { Couchbase } from "nativescript-couchbase";
 
@@ -22,16 +21,11 @@ export class Page3Component implements OnInit {
     }
 
     public ngOnInit () {
-        // this.storage = JSON.parse(ApplicationSettings.getString("data", "[]"));
+        
     }
 
     public save () {
         if (this.firstname && this.lastname) {
-            // this.storage.push({
-            //     "firstname": this.firstname,
-            //     "lastname": this.lastname
-            // });
-            // ApplicationSettings.setString("data", JSON.stringify(this.storage));
             this.database.createDocument({
                 "firstname": this.firstname,
                 "lastname": this.lastname

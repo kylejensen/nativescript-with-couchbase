@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
+import * as Camera from "camera";
 
 @Component({
     selector: "page2",
@@ -16,6 +17,12 @@ export class Page2Component implements OnInit {
     public ngOnInit () {
         this.route.queryParams.subscribe((params) => {
             this.fullName = params["name"];
+        });
+    }
+
+    public capture () {
+        Camera.takePicture().then((picture) => {
+            //do something with picture
         });
     }
 

@@ -21,6 +21,7 @@
     "@angular/platform-browser": "2.4.3",
     "@angular/platform-browser-dynamic": "2.4.3",
     "@angular/router": "3.4.3",
+    "jssha": "^2.2.0",
     "nativescript-angular": "1.4.0",
     "nativescript-couchbase": "^1.0.17",
     "nativescript-theme-core": "~1.0.2",
